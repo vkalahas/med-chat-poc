@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import 'deep-chat';
+import 'deep-chat-web-llm';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'cogentmedprj';
+  initialMessages = [
+    // { role: 'user', text: 'Hey, how are you today?' },
+    { role: 'ai', text: 'Hi, what medical info would you like more information on?' },
+  ];
 }
